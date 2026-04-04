@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — One Number</title>
+    <meta name="description" content="Privacy Policy for One Number, a net worth tracking app by Xopius.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #111110;
+            --bg-surface: #1a1a17;
+            --gold: #C9A84C;
+            --gold-light: #D4B85C;
+            --gold-border: rgba(201, 168, 76, 0.2);
+            --text: #E8E4DC;
+            --text-secondary: #9A9688;
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'DM Sans', system-ui, sans-serif;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--gold); text-decoration: none; }
+        a:hover { color: var(--gold-light); }
+
+        nav {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 2rem 0;
+        }
+
+        .back {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+
+        .back:hover { color: var(--text); }
+
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+        }
+
+        .content h1 {
+            font-family: var(--serif);
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .effective-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .content h2 {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--gold);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.8;
+            font-size: 0.92rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .content ul li {
+            color: var(--text-secondary);
+            font-weight: 300;
+            font-size: 0.92rem;
+            line-height: 1.8;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--gold-border);
+        }
+
+        .content strong {
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 480px) {
+            nav { padding: 1.5rem 1.5rem 0; }
+            .content { padding: 2rem 1.5rem 4rem; }
+            footer { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/onenumber/" class="back">← One Number</a>
+    </nav>
+
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: April 4, 2026 · Developer: Karthikeyan Sriraman (Xopius)</p>
+
+        <h2>Overview</h2>
+        <p>One Number is a personal net worth tracking app. Your privacy is fundamental to how this app is built. We do not collect, store, or share any of your personal or financial data.</p>
+
+        <h2>Data Storage</h2>
+        <p>All data you enter into One Number — including account names, values, goals, and settings — is stored <strong>locally on your device</strong> using Apple's Core Data framework. This data never leaves your device except through Apple's iCloud sync (described below).</p>
+
+        <h2>iCloud Sync</h2>
+        <p>If you have iCloud enabled on your device, One Number uses Apple's CloudKit to sync your data across your own Apple devices (iPhone, iPad, Mac). This sync happens entirely through Apple's infrastructure:</p>
+        <ul>
+            <li>Data is encrypted in transit and at rest by Apple</li>
+            <li>Only you can access your synced data through your Apple ID</li>
+            <li>We have no access to your iCloud data</li>
+            <li>You can disable iCloud sync in your device's Settings</li>
+        </ul>
+
+        <h2>Data We Do Not Collect</h2>
+        <ul>
+            <li>No personal information (name, email, phone)</li>
+            <li>No financial data (account numbers, bank details, transaction history)</li>
+            <li>No usage analytics or tracking</li>
+            <li>No device identifiers or advertising IDs</li>
+            <li>No location data</li>
+            <li>No cookies or web tracking</li>
+            <li>No crash reports sent to us</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>One Number uses <strong>zero</strong> third-party libraries, SDKs, or services. There are:</p>
+        <ul>
+            <li>No analytics tools (no Google Analytics, no Firebase, no Mixpanel)</li>
+            <li>No advertising networks</li>
+            <li>No social media integrations</li>
+            <li>No bank linking or financial data APIs</li>
+            <li>No crash reporting services</li>
+        </ul>
+        <p>The only external service used is Apple's own StoreKit for processing in-app purchases, which is handled entirely by Apple under their own privacy policy.</p>
+
+        <h2>In-App Purchases</h2>
+        <p>One Number offers a one-time in-app purchase processed through Apple's App Store. Apple handles all payment information. We do not receive or store any payment details such as credit card numbers or billing addresses.</p>
+
+        <h2>Data Retention</h2>
+        <p>Your data exists only on your device and in your personal iCloud account. If you delete the app, your local data is removed. iCloud data can be managed through your device's iCloud settings.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>One Number does not knowingly collect any information from children under the age of 13. The app does not require account creation or any personal information to function.</p>
+
+        <h2>Security</h2>
+        <p>Your data is protected by:</p>
+        <ul>
+            <li>Apple's device-level encryption</li>
+            <li>Optional Face ID / Touch ID app lock (configured by you)</li>
+            <li>Apple's iCloud encryption for synced data</li>
+            <li>No network connections to any external servers</li>
+        </ul>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we update this privacy policy, the revised version will be posted at this URL with an updated effective date. Since we collect no data, changes would only reflect new app features or Apple platform updates.</p>
+
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:support@xopius.com">support@xopius.com</a><br>
+        <strong>Website:</strong> <a href="https://xopius.com">xopius.com</a></p>
+    </div>
+
+    <footer>
+        <p>© 2026 Karthikeyan Sriraman. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

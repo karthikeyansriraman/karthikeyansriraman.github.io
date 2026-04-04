@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xopius — Simple apps, done right</title>
+    <meta name="description" content="Xopius by Karthikeyan Sriraman. Crafting simple, useful iOS apps at an affordable price.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAFAF8;
+            --text: #1a1a18;
+            --text-secondary: #6b6b63;
+            --accent: #2c2c28;
+            --border: #e8e8e3;
+            --card-bg: #FFFFFF;
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'DM Sans', system-ui, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- HEADER --- */
+        header {
+            padding: 2rem 2rem 0;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .brand {
+            font-family: var(--serif);
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--text);
+        }
+
+        .brand span {
+            font-weight: 400;
+            color: var(--text-secondary);
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text);
+            max-width: 560px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .hero p {
+            margin-top: 1.5rem;
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 480px;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* --- DIVIDER --- */
+        .divider {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .divider hr {
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+
+        /* --- APPS SECTION --- */
+        .apps {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+        }
+
+        .apps-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .app-card:hover {
+            box-shadow: var(--card-shadow);
+            transform: translateY(-2px);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-info h3 {
+            font-family: var(--serif);
+            font-size: 1.35rem;
+            font-weight: 500;
+        }
+
+        .app-info .app-tagline {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+            font-weight: 300;
+        }
+
+        .app-info .app-meta {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .app-meta .platform {
+            background: #f0f0ec;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .app-arrow {
+            margin-left: auto;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .app-card:hover .app-arrow {
+            transform: translateX(4px);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--text);
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header { animation: fadeUp 0.6s ease both; }
+        .hero h1 { animation: fadeUp 0.6s ease 0.1s both; }
+        .hero p { animation: fadeUp 0.6s ease 0.2s both; }
+        .app-card { animation: fadeUp 0.6s ease 0.35s both; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 480px) {
+            .hero { padding: 4rem 1.5rem 3rem; }
+            .apps { padding: 2rem 1.5rem 4rem; }
+            header { padding: 1.5rem 1.5rem 0; }
+            .divider { padding: 0 1.5rem; }
+            footer { padding: 2rem 1.5rem; }
+            .app-card { padding: 1.25rem; gap: 1rem; }
+            .app-icon { width: 64px; height: 64px; border-radius: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">Xopius <span>by Karthikeyan Sriraman</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Simple apps, <em>done right.</em></h1>
+        <p>Crafting iOS apps that do one thing well — no subscriptions, no tracking, no clutter. Just useful tools at a small, one-time price.</p>
+    </section>
+
+    <div class="divider"><hr></div>
+
+    <section class="apps">
+        <p class="apps-label">Apps</p>
+
+        <a href="/onenumber/" class="app-card">
+            <div class="app-icon">
+                <img src="/onenumber/images/icon.png" alt="One Number app icon">
+            </div>
+            <div class="app-info">
+                <h3>One Number</h3>
+                <p class="app-tagline">Your entire net worth. One screen. One number.</p>
+                <div class="app-meta">
+                    <span class="platform">iPhone</span>
+                    <span class="platform">iPad</span>
+                    <span class="platform">Mac</span>
+                    <span>One-time purchase</span>
+                </div>
+            </div>
+            <span class="app-arrow">→</span>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Karthikeyan Sriraman. All rights reserved.</p>
+        <a href="mailto:support@xopius.com">support@xopius.com</a>
+    </footer>
+
+</body>
+</html>
