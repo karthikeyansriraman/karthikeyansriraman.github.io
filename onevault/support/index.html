@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — OneVault</title>
+    <meta name="description" content="Support and frequently asked questions for OneVault, a personal records and renewal reminder app by Karthikeyan Sriraman.">
+    <link rel="icon" href="/onevault/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0E0E10;
+            --bg-surface: #1E1E22;
+            --sage: #7FB9A5;
+            --sage-light: #96CBB8;
+            --sage-dim: rgba(127, 185, 165, 0.15);
+            --sage-border: rgba(127, 185, 165, 0.22);
+            --text: #E8E6DF;
+            --text-secondary: #8A8880;
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'DM Sans', system-ui, sans-serif;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--sage); text-decoration: none; }
+        a:hover { color: var(--sage-light); }
+
+        nav {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 2rem 0;
+        }
+
+        .back {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+
+        .back:hover { color: var(--text); }
+
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+        }
+
+        .content h1 {
+            font-family: var(--serif);
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .subhead {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-card {
+            border: 1px solid var(--sage-border);
+            background: var(--sage-dim);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card .label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card .email {
+            font-family: var(--serif);
+            font-size: 1.35rem;
+            font-weight: 500;
+        }
+
+        .contact-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        .content h2 {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--sage);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content h3 {
+            font-size: 0.96rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-top: 1.75rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .content p {
+            color: var(--text-secondary);
+            font-weight: 300;
+            line-height: 1.8;
+            font-size: 0.92rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        .content ul li {
+            color: var(--text-secondary);
+            font-weight: 300;
+            font-size: 0.92rem;
+            line-height: 1.8;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--sage-border);
+        }
+
+        .content strong { font-weight: 500; color: var(--text); }
+
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer p, footer a {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 480px) {
+            nav { padding: 1.5rem 1.5rem 0; }
+            .content { padding: 2rem 1.5rem 4rem; }
+            footer { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/onevault/" class="back">← OneVault</a>
+    </nav>
+
+    <div class="content">
+        <h1>Support</h1>
+        <p class="subhead">One person builds and answers for OneVault. You will get a real reply.</p>
+
+        <div class="contact-card">
+            <div class="label">Email</div>
+            <div class="email"><a href="mailto:support@karthikeyansriraman.in">support@karthikeyansriraman.in</a></div>
+            <p>Please include your device model and iOS version. If it is about something going wrong, what you tapped just before it happened is the most useful thing you can tell me.</p>
+        </div>
+
+        <h2>Common questions</h2>
+
+        <h3>My reminder never appeared.</h3>
+        <p>Almost always notification permission. Open Settings in OneVault — if reminders are blocked, a row appears at the top of the Reminders section that takes you straight to the right place in iOS Settings. Also check that the item has a reminder date and that a Focus mode was not filtering notifications at the time.</p>
+
+        <h3>I marked something done and it is still overdue.</h3>
+        <p>That is deliberate. Marking done advances the date by <strong>exactly one cycle</strong>, so an item two years behind becomes one year behind, not current. Each tap records one real history entry. Mark it done again to catch up another cycle — the record stays honest about how many were missed.</p>
+
+        <h3>My data is not syncing between devices.</h3>
+        <ul>
+            <li>Both devices must be signed in to the same Apple Account</li>
+            <li>iCloud Drive must be on: iOS Settings → your name → iCloud</li>
+            <li>The first sync after installing can take a few minutes</li>
+            <li>Sync needs an internet connection; it will catch up when one returns</li>
+        </ul>
+
+        <h3>I reinstalled the app and my trial did not reset.</h3>
+        <p>Correct. The 30-day trial is anchored to your Apple Account rather than to the installation, so reinstalling does not start it again. Your data comes back from iCloud, but the clock continues from where it was.</p>
+
+        <h3>What stops working after the trial?</h3>
+        <p>Only creating <strong>new</strong> items, categories and notes. Everything you have already added keeps working completely — editing, marking done, adding history, attachments, reminders, search, archive, restore and delete. Nothing is hidden or deleted.</p>
+
+        <h3>I bought it, but a new device says I have not.</h3>
+        <p>Open the unlock screen and tap <strong>Restore Purchase</strong>, signed in to the same Apple Account you bought with. If it still does not unlock, email me and I will help.</p>
+
+        <h3>I want a refund.</h3>
+        <p>Refunds for App Store purchases are handled by Apple, not by me — I have no ability to issue one. Use <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Tell me what went wrong too, so I can fix it.</p>
+
+        <h3>How do I get my data out?</h3>
+        <p>Your data lives on your device and in your own private iCloud database. There is no export feature yet. If you need one, say so — it helps me prioritise.</p>
+
+        <h3>I deleted something by mistake.</h3>
+        <p>Archived items and notes can be restored from Settings → Archived Items. Deleting is permanent and is always confirmed first, so there is no undo for a deletion. If the item existed on another synced device that has not yet come online, it may still be there.</p>
+
+        <h2>Reporting a problem</h2>
+        <p>Email is the fastest route. What helps most:</p>
+        <ul>
+            <li>Device and iOS version, from iOS Settings → General → About</li>
+            <li>The app version, from the bottom of OneVault's Settings screen</li>
+            <li>What you expected to happen, and what happened instead</li>
+            <li>A screenshot — but please redact anything sensitive first</li>
+        </ul>
+
+        <h2>Privacy note</h2>
+        <p>OneVault sends no diagnostics or analytics anywhere, so I have no visibility into your app at all. Whatever you tell me is the only information I have. Please do not email passwords, policy numbers, or scans of documents — I do not need them, and email is not a safe place for them.</p>
+
+        <h2>More</h2>
+        <p><a href="/onevault/privacypolicy/">Privacy Policy</a> · <a href="/onevault/termsofuse/">Terms of Use</a></p>
+    </div>
+
+    <footer>
+        <p>© 2026 Karthikeyan Sriraman. All rights reserved.</p>
+        <a href="mailto:support@karthikeyansriraman.in">support@karthikeyansriraman.in</a>
+    </footer>
+
+</body>
+</html>
